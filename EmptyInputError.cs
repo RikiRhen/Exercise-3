@@ -8,7 +8,7 @@ namespace Exercise_3
 {
     internal class EmptyInputError : UserError
     {
-        public override string UEMessage()
+        protected override string UEMessage()
         {
             return "You tried to leave an obligatory field empty. This fired an error!";
         }

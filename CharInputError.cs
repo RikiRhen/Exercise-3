@@ -8,7 +8,7 @@ namespace Exercise_3
 {
     internal class CharInputError : UserError
     {
-        public override string UEMessage()
+        protected override string UEMessage()
         {
             return "You tried to use multiple letters in a single-character only field. This fired an error!";
         }

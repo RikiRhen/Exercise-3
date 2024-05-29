@@ -1,5 +1,9 @@
 ﻿namespace Exercise_3
 {
+    //F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut, i vilken klass bör vi lägga det?
+    //I Bird klassen vore ju rimligt, för att säkerställa att alla subklasser ärver det nya attributet.
+    //F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
+    //Med samma logik, då i Animal klassen för att säkerställa att alla subklasser får det nya attributet.
     internal class Program
     {
         static void Main(string[] args)
@@ -8,17 +12,19 @@
             //Console.WriteLine(person);
             //Kan jag komma åt variablerna direkt? Nej. De är privata. Det enda sättet för mig att komma åt dem nu är via deras getters och setters.
 
-            List<UserError> errorList = [];
-            errorList.Add(new TextInputError());
-            errorList.Add(new NumericInputError());
-            errorList.Add(new DoubleInputError());
-            errorList.Add(new CharInputError());
-            errorList.Add(new EmptyInputError());
+            List<UserError> errorList = new()
+            {
+                new TextInputError(),
+                new NumericInputError(),
+                new DoubleInputError(),
+                new CharInputError(),
+                new EmptyInputError()
+            };
             
 
             foreach (var error in errorList)
             {
-                Console.WriteLine(error.UEMessage());
+                Console.WriteLine(error.GetMessage());
             }
 
             /*

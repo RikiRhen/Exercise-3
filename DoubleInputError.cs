@@ -8,7 +8,7 @@ namespace Exercise_3
 {
     internal class DoubleInputError : UserError
     {
-        public override string UEMessage()
+        protected override string UEMessage()
         {
             return "You tried to use a text input in a double only field. This fired an error!";
         }
