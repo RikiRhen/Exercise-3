@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Exercise_3
 {
-    internal class Hedgehog : Animal
+    internal class Bird : Animal
     {
-        public Hedgehog(string name, int age, double weight) : base(name, age, weight)
+        public Bird(string name, int age, double weight) : base(name, age, weight)
         {
         }
 
@@ -17,9 +17,9 @@ namespace Exercise_3
             return $"{_name}, Age: {_age}, {_weight}kg.";
         }
 
-        public override void DoSound()
+        public override string DoSound()
         {
-            Console.WriteLine("Snuffles...");
+            return "Chirp!";
         }
     }
 }

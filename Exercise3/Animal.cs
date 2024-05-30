@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+[assembly:InternalsVisibleTo("Exercise3.Tests")]
 
 namespace Exercise_3
 {
@@ -19,7 +21,7 @@ namespace Exercise_3
             _weight = weight;
         }
 
-        public abstract void DoSound();
+        public abstract string DoSound();
 
         public abstract string Stats();
     }

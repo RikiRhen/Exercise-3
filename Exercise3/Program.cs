@@ -13,6 +13,8 @@
     //Om jag castar om elementet till Dog. Animal har inte metoden och programmet kommer inte kunna hitta den klass-unika metoden så den måste castas om för att bli en Dog först.
     internal class Program
     {
+        
+
         static void Main(string[] args)
         {
             //Person person = new(25, "Adam", "Bertilsson", 178.5, 78.2);

@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Exercise_3
 {
-    internal class Wolf : Animal
+    internal class Worm : Animal
     {
-        public Wolf(string name, int age, double weight) : base(name, age, weight)
+        public Worm(string name, int age, double weight) : base(name, age, weight)
         {
         }
+
         public override string Stats()
         {
             return $"{_name}, Age: {_age}, {_weight}kg.";
         }
 
-        public override void DoSound()
+        public override string DoSound()
         {
-            Console.WriteLine("Awoo!");
+            return "...";
         }
     }
 }

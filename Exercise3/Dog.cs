@@ -16,9 +16,9 @@ namespace Exercise_3
             return $"{_name}, Age: {_age}, {_weight}kg.";
         }
 
-        public override void DoSound()
+        public override string DoSound()
         {
-            Console.WriteLine("Bork!");
+            return "Bork!";
         }
 
         public string WantsPats()

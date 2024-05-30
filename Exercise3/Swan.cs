@@ -19,9 +19,9 @@ namespace Exercise_3
             return $"{_name}, Age: {_age}, {_weight}kg, it is {_hasAdorableChicks} that cygnets are adorable.";
         }
 
-        public override void DoSound()
+        public override string DoSound()
         {
-            Console.WriteLine("Honk!");
+            return "Honk!";
         }
     }
 }

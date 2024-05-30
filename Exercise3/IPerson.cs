@@ -8,6 +8,6 @@ namespace Exercise_3
 {
     internal interface IPerson
     {
-        public void Talk();
+        public string Talk();
     }
 }

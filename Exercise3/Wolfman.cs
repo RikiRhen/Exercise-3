@@ -14,14 +14,14 @@ namespace Exercise_3
             _isBipedal = isBipedal;
         }
 
-        public void Talk()
+        public string Talk()
         {
-            Console.WriteLine("AwooOoOOo I say!");
+            return "AwooOoOOo I say!";
         }
 
         public override string Stats()
         {
-            return $"{_name} ,Age: {_age}, {_weight}kg, it is {_isBipedal} that this beast walks on two legs.";
+            return $"{_name}, Age: {_age}, {_weight}kg, it is {_isBipedal} that this beast walks on two legs.";
         }
     }
 }
