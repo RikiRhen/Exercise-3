@@ -12,7 +12,12 @@ namespace Exercise_3
         {
         }
 
-        protected override void DoSound()
+        public override string Stats()
+        {
+            return $"{_name}, Age: {_age}, {_weight}kg.";
+        }
+
+        public override void DoSound()
         {
             Console.WriteLine("Snuffles...");
         }

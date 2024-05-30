@@ -13,5 +13,10 @@ namespace Exercise_3
         {
             _standsOnNumberOfLegs = standsOnNumberOfLegs;
         }
+
+        public override string Stats()
+        {
+            return $"{_name}, Age: {_age}, {_weight}kg, stands on {_standsOnNumberOfLegs} leg(s).";
+        }
     }
 }

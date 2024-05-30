@@ -19,6 +19,8 @@ namespace Exercise_3
             _weight = weight;
         }
 
-        protected abstract void DoSound();
+        public abstract void DoSound();
+
+        public abstract string Stats();
     }
 }

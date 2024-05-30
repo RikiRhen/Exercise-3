@@ -11,10 +11,19 @@ namespace Exercise_3
         public Dog(string name, int age, double weight) : base(name, age, weight)
         {
         }
+        public override string Stats()
+        {
+            return $"{_name}, Age: {_age}, {_weight}kg.";
+        }
 
-        protected override void DoSound()
+        public override void DoSound()
         {
             Console.WriteLine("Bork!");
+        }
+
+        public string WantsPats()
+        {
+            return $"{_name} wants pats now";
         }
     }
 }

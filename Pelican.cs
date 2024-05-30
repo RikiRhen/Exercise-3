@@ -13,5 +13,10 @@ namespace Exercise_3
         {
             _gularPouch = gularPouch;
         }
+
+        public override string Stats()
+        {
+            return $"{_name}, Age: {_age}, {_weight}kg, it is {_gularPouch} that this bird has a gular pouch.";
+        }
     }
 }
