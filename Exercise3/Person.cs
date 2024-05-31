@@ -9,26 +9,26 @@ namespace Exercise_3
 {
     internal class Person
     {
-        private int age;
-        private string fName;
-        private string lName;
-        private double height;
-        private double weight;
+        private int _age;
+        private string _fName;
+        private string _lName;
+        private double _height;
+        private double _weight;
 
         public Person (int age, string fName, string lName, double height, double weight)
         {
-            this.age = age;
-            this.fName = fName;
-            this.lName = lName;
-            this.height = height;
-            this.weight = weight;
+            this._age = age;
+            this._fName = fName;
+            this._lName = lName;
+            this._height = height;
+            this._weight = weight;
         }
 
-        public int GetAge() { return age; }
-        public string GetFName() {  return fName; }
-        public string GetLName() {  return lName; }
-        public double GetHeight() { return height; }   
-        public double GetWeight() { return weight; }   
+        public int GetAge() { return _age; }
+        public string GetFName() {  return _fName; }
+        public string GetLName() {  return _lName; }
+        public double GetHeight() { return _height; }   
+        public double GetWeight() { return _weight; }   
 
         public void SetAge(int age) 
         {
@@ -38,7 +38,7 @@ namespace Exercise_3
                 {
                     throw new ArgumentException("Age has to be set to atleast 1.");
                 }
-                this.age = age;
+                this._age = age;
             } catch (ArgumentException e)
             {
                 Console.WriteLine($"Invalid age: {e.Message}");
@@ -53,7 +53,7 @@ namespace Exercise_3
                 {
                     throw new ArgumentException("First name has to be between 2 and 10 letters.");
                 }
-                this.fName = fName;
+                this._fName = fName;
             } catch (ArgumentException e)
             {
                 Console.WriteLine($"Invalid first name: {e.Message}");
@@ -68,17 +68,17 @@ namespace Exercise_3
                 {
                     throw new ArgumentException("Last name has to be between 5 and 15 letters.");
                 }
-                this.lName = lName;
+                this._lName = lName;
             } catch (ArgumentException e)
             {
                 Console.WriteLine($"Invalid last name: {e.Message}");
             }
             
         }
-        public void SetHeight(double height) { this.height = height;}
-        public void SetWeight(double weight) { this.weight = weight;}
+        public void SetHeight(double height) { this._height = height;}
+        public void SetWeight(double weight) { this._weight = weight;}
 
-        public override string ToString() { return $"Age: {age}, Name: {lName}, {fName}, Height: {height}, Weight: {weight}"; }
+        public override string ToString() { return $"Age: {_age}, Name: {_lName}, {_fName}, Height: {_height}, Weight: {_weight}"; }
         //Allt kan testas med ToString() metoden och asserta att printet är korrekt med ålder, namn etc.
     }
 }

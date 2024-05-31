@@ -2,7 +2,7 @@ using Exercise_3;
 
 namespace Exercise3.Tests
 {
-    public class Tester
+    public class AnimalTester
     {
         [Fact]
         public void BirdClass_MakesCorrectSound()
