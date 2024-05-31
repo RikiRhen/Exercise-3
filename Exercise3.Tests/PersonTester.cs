@@ -120,7 +120,7 @@ namespace Exercise3.Tests
 
         [Fact]
 
-        //Weight does not have a verification implemented
+        //Weight does not have a verification implemented.
         public void Person_VerifyWeightSetter()
         {
             Person person = new(15, "A", "B", 120, 45.2);
